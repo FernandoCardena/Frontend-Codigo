@@ -1,3 +1,119 @@
-p {
-    color: orange;
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* 
+  font-family: "Fraunces", serif;
+  font-family: "Montserrat", sans-serif;
+*/
+
+body {
+  background-color: hsl(30, 38%, 92%);
+
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+
+  margin: 0;
+
+  display: flex; /* Flexbox */
+  justify-content: center;
+  align-items: center;
+
+  height: 100vh;
+}
+
+main {
+  /* border: 4px solid red; */
+
+  width: 650px;
+
+  min-height: 400px;
+
+  display: flex;
+
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+.photo {
+  /* background-color: blue; */
+
+  width: 350px;
+
+  background-image: url(./images/image-product-desktop.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.content {
+  background-color: hsl(0, 0%, 100%);
+
+  width: 300px;
+
+  padding: 28px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 21px;
+}
+
+.content h3 {
+  /* border: 1px solid blue; */
+  
+  margin: 0; /* resetea el margen de este h3 */
+
+  text-transform: uppercase;
+  font-weight: 500;
+  color: hsl(228, 12%, 48%);
+  font-size: 14px;
+  letter-spacing: 7px;
+}
+
+.content h1 {
+  margin: 0;
+  font-family: "Fraunces", serif;
+  font-size: 42px; /* 14px * 3 = 42px */
+  color: hsl(212, 21%, 14%);
+  font-weight: 700;
+}
+
+.content div {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.content p {
+  margin: 0;
+
+  font-weight: 500;
+  color: hsl(228, 12%, 48%);
+  line-height: 1.5;
+}
+
+.content span {
+  font-family: "Fraunces", serif;
+  font-size: 32px;
+  font-weight: 700;
+  color: hsl(158, 36%, 37%);
+}
+
+.content s {
+  color: hsl(228, 12%, 48%);
+}
+
+.content button {
+  border: 0;
+
+  font-family: "Montserrat", sans-serif;
+  /* font-family: inherit; */
+  font-weight: 700;
+  background-color: hsl(158, 36%, 37%);
+  color: hsl(0, 0%, 100%);
+
+  padding: 14px;
+  border-radius: 7px;
+  cursor: pointer;
+
+  display: flex;
+  justify-content: center;
+  gap: 7px;
 }
